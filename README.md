@@ -8,7 +8,7 @@
 2. Platformio extension
 3. C/C++ extension
 4. Git or Github
-## How ro use the code
+## How to use the code
 1. Clone the repository to your computer
 2. Open the repository in VS Code
 3. Download all the required dependencies
