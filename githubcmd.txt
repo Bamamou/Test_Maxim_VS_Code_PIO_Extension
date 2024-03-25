@@ -1,0 +1,33 @@
+git init
+git add .
+git commit -m "2.3.xxx stable version" 
+git remote add origin https://github.com/EvokeMotorcycles/ESP32_ECU_2.xx.git
+git pull --rebase origin v2.xx
+git push https://github.com/EvokeMotorcycles/ESP32_ECU_2.xx.git v2.xx -f
+git push -u origin v2.xx
+EvokeMotorcycles/ESP32_ECU_2.xx v2.xx
+
+git init
+git add .
+git remote add upstream https://github.com/EvokeMotorcycles/ESP32_ECU_2.xx.git
+git fetch upstream
+(commit )
+git merge upstream/v2.xx --allow-unrelated-histories
+(conflict)
+git checkout -b v2.xx
+git commit -m "Add BT bidirectional function to commicate with Serial BT terminal.Add void receiveDataViaBT() in tasks_Bluetooth.cpp" 
+git commit -m "Save data at Winbond flash & ESP32 internal flash 5.30 13:00" 
+git commit -m "Save data at Winbond flash & ESP32 internal flash 5.31 18:00" 
+git push -u upstream v2.xx
+
+
+git commit --amend --no-edit
+git commit --amend -m "Save data at Winbond flash & ESP32 internal flash 5.31 11:00" 
+
+git pull upstream v2.xx --allow-unrelated-histories
+
+git stash
+git pull
+git stash pop
+
+
