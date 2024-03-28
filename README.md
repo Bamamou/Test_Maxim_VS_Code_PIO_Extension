@@ -8,12 +8,14 @@
 2. Platformio extension
 3. C/C++ extension
 4. Git or Github
+5. Wokwi Simulator (This is new)
 ## How to use the code
 1. Clone the repository to your computer
 2. Open the repository in VS Code
 3. Download all the required dependencies
 3. On the top right side of your window there is play button
 3. Click on the arrow near to that paly button then choose build.
-4. After building, click on the same arrow and choose upload if your board connected. 
-5. If you don't have an ESP32 board, then click on Serial Monitor button.
-5. A new CLI will open in the terminal then take a screenshot of it.
+4. After building, click on F1 of the keyboard and selector Start simulator to run the output of the elf and bin file from .pio. 
+5. if it requires a license, go onto wokwi.com to open an account then you'll have a free account. (This is also new)
+5. An alternative to F1 is to click on the diagram.json to open the circuit diagram and click on the run button but you still need to have a valid license.
+6. After running the bin file on the virtual ESP32, send me the screenshot.
